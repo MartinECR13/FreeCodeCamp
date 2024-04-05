@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Gatitos</title>
+    <title>CatPhotoApp</title>
   </head>
   <body>
     <main>
@@ -80,6 +80,7 @@
                 type="radio"
                 name="indoor-outdoor"
                 value="indoor"
+                checked
               />Indoor</label
             >
             <!-- Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
@@ -97,9 +98,23 @@
             <legend>What's your cat's personality?</legend>
 
             <!-- There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute. -->
-            <input type="checkbox" id="loving" name="personality" value="loving"/> <label for="loving">Loving</label> 
-            <input type="checkbox" id="lazy" name="personality" value="lazy"/> <label for="lazy">Lazy</label> 
-            <input type="checkbox" id="energetic" name="personality" value="energetic"/> <label for="energetic">Energetic</label> 
+            <input
+              type="checkbox"
+              id="loving"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input type="checkbox" id="lazy" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              type="checkbox"
+              id="energetic"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
             <!-- Adding the attribute "name" makes it easier for a server to process your web form, especially when there are multiple checkboxes. -->
           </fieldset>
 
@@ -107,5 +122,8 @@
         </form>
       </section>
     </main>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
   </body>
 </html>
